@@ -1,0 +1,49 @@
+body {
+    background-color: #1c1c1c;
+}
+
+* {
+    color: white;
+}
+
+#title, #subheader {
+    text-align: center;
+    color: white;
+}
+
+.game {
+    display: inline-block;
+    background-color: #1c1c1c;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    border-radius: 45px;
+    border: 1px solid #ffffff;
+    transition: background-color 0.3s;
+
+    * {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    };
+
+    :first-child {
+        margin-top: 50px;
+    };
+
+    :last-child {
+        margin-bottom: 50px;
+    };
+}
+
+.game:hover {
+    background-color: #252525;
+}
+
+.center {
+    text-align: center;
+}
+
+.small_text {
+    font-size: 0.8em;
+}

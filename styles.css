@@ -2,6 +2,11 @@ li {
     list-style-type: none;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 .warning {
     color: yellow;
 }
@@ -9,3 +14,34 @@ li {
 .error {
     color: red;
 }
+
+.good {
+    color: green;
+}
+
+* {
+    font-family: '0xProto Nerd Font Mono', monospace;
+}
+
+/* region font */
+@font-face {
+    font-family: '0xProto Nerd Font Mono';
+    src: url("fonts/0xProto-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '0xProto Nerd Font Mono';
+    src: url("fonts/0xProto-Bold.woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '0xProto Nerd Font Mono';
+    src: url("fonts/0xProto-Italic.woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+/* endregion */

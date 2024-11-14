@@ -1,0 +1,33 @@
+body {
+    background-color: #1c1c1c;
+}
+
+* {
+    color: white;
+    text-align: center;
+}
+
+#back {
+    position: absolute;
+    bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 30%;
+    left: calc(50% - 15%);
+    transition: background-color 0.3s;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+}
+
+#back:hover {
+    background-color: #353535;
+}
+
+#changelog {
+    width: 80%;
+    border: 1px solid #ffffff;
+    margin-left: calc(50% - 40%);
+    border-radius: 45px;
+    transition: visibility 0.3s;
+}
