@@ -1,0 +1,11 @@
+li {
+    list-style-type: none;
+}
+
+.warning {
+    color: yellow;
+}
+
+.error {
+    color: red;
+}
