@@ -7,7 +7,7 @@ $(document).ready(function() {
     game = GAMES.find(game => game.id === gameId)
     if (game) {
         $("#header").text(game.name)
-        $("#description").html(game.description)
+            $("#description").html(game.description)
 
         getRepoContents(`/games/${gameId}/releases`).then(releases => {
             $("#releasesList").empty()
@@ -57,5 +57,5 @@ function showChangelog(release) {
 
 function downloadRelease(release, platform) {
     const downloadPath = `games/${game.id}/releases/${release}/${platform.toLowerCase()}.zip`
-    downloadFile(downloadPath)
+    downloadFile(downloadPath).then(r => {})
 }
