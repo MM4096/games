@@ -14,7 +14,7 @@ class Game {
 
 const GAMES = [
 	new Game("Platformer - A Platformer",
-		"A small game where as many game conventions as possible are broken<br><b>This game is on <a href='https://mm4096.itch.io/platformer-a-platformer'>itch.io</a>!</b>",
+		"A small game where as many game conventions as possible are broken<br><i>This game is on <a href='https://mm4096.itch.io/platformer-a-platformer'>itch.io</a>!</i>",
 		"doing-everything-wrong",
 		[""],
 		"",

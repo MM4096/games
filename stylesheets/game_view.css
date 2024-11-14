@@ -31,3 +31,7 @@ body {
     border-radius: 45px;
     transition: visibility 0.3s;
 }
+
+button {
+    font-family: "0xProto Nerd Font Mono", monospace;
+}

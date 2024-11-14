@@ -9,11 +9,14 @@ $(document).ready(function() {
         $("#header").text(game.name)
             $("#description").html(game.description)
 
-        getRepoContents(`/games/${gameId}/releases`).then(releases => {
+        getRepoContents(`games/${gameId}/releases`).then(releases => {
             $("#releasesList").empty()
             releases.forEach(release => {
                 $("#releasesList").append(`<li><a href="#" onclick="showChangelog('${release["name"]}')">${release["name"]}</a></li>`)
             })
+        }).catch(e => {
+            console.log(e)
+            $("#releasesList").append(`<li><p class="text-danger">ERROR: Couldn't get releases.</p></li>`)
         })
     }
     else {
@@ -57,5 +60,7 @@ function showChangelog(release) {
 
 function downloadRelease(release, platform) {
     const downloadPath = `games/${game.id}/releases/${release}/${platform.toLowerCase()}.zip`
-    downloadFile(downloadPath).then(r => {})
+    downloadFile(downloadPath).then(r => {
+        console.log(r)
+    })
 }

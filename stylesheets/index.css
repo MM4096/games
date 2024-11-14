@@ -40,10 +40,18 @@ body {
     background-color: #252525;
 }
 
+.game > a {
+    color: #ffffff;
+}
+
 .center {
     text-align: center;
 }
 
 .small_text {
     font-size: 0.8em;
+}
+
+hr {
+    border: 1px solid #ffffff;
 }
