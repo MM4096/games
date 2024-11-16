@@ -96,3 +96,26 @@ function getMostRecentlyUpdatedGame() {
 	})
 	return newestGame;
 }
+
+function platformToIconClass(platform) {
+	if (platform === "Windows") {
+		return "bi bi-windows";
+	}
+	else if (platform === "Linux") {
+		return "bi bi-ubuntu";
+	}
+	else if (platform === "Mac") {
+		return "bi bi-apple";
+	}
+	else {
+		return ""
+	}
+}
+
+function platformsToIcons(platforms) {
+	let icons = [];
+	platforms.forEach(platform => {
+		icons.push(platformToIconClass(platform));
+	})
+	return icons;
+}
