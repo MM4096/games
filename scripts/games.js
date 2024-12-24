@@ -57,6 +57,21 @@ const GAMES = [
 			}
 		],
 		["Windows", "Linux"]),
+
+	new Game("Evil Inc",
+		"A collection of games where you stop an evil company from taking your information and hacking your computer<br>" +
+					"This game is released on Itch.io! View the page <a href='https://mm4096.itch.io/evil-inc'>here</a>.",
+		"evil-inc",
+		["mm4096.itch.io/evil-inc"],
+		"", "", "",
+		[{
+			version: "v1.1",
+			date: "2024-12-24",
+			changes: [
+				"Initial Release",
+			]
+		}],
+		["Windows", "Linux", "Web"])
 ];
 
 function parseVersion(version) {
